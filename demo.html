@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<title>Tiny Sortable Drag n Drop</title>
+	<meta name="description" content="ehotel description">
+	<meta name="keywords" content="ini keyword nya">
+	<meta name="verify-v1" content="dvomggkfr8avuvdd3b08vh7a46" />
+	<meta name="Copyright" content="fisip.net">
+	<meta name="Author" content="ehotel.com">
+	<meta name="ROBOTS" content="all, index, follow">
+	<style type="text/css">
+	section {
+		width: 900px;
+		margin: 0 auto;
+	}
+	.area {
+		float: left;
+		width: 202px;
+		height: 170px;
+		padding: 5px 10px;
+		margin-right: 3px;
+		background: #eee;
+		text-align: center;
+	}
+	.element {
+		width: 100px;
+		padding: 0 5px;
+		display: block;
+		margin: 0 auto 3px;
+		text-align: center;
+		border: 1px solid #aaa;
+		background: #ddd;
+		cursor: move;
+	}
+	.clear {clear: both; }
+	</style>
+   <script type="text/javascript" src="sortable.js"></script>
+	<script type="text/javascript">
+	window.onload = function () {
+		sortable('area', 'element');
+	};
+   </script>
+</head>
+<body>
+	<section>
+		<div class="area">
+			Area 1
+			<a class="element">One</a>
+			<a class="element">Two</a>
+			<a class="element">Three</a>
+			<a class="element">Four</a>
+			<a class="element">Five</a>
+			<a class="element">Six</a>
+		</div>
+		<div class="area">Area 2</div>
+		<div class="area">Area 3</div>
+		<div class="area">Area 4</div>
+		<div class="clear"></div>
+	</section>
+</body>
+</html>
